@@ -463,7 +463,12 @@ nav .menu-section #nav-menu a .active {
   color: var(--clr-secondary);
 }
 
-
+nav .menu-section {
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 0.5rem;
+}
 
 }
 
