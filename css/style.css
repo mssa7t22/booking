@@ -412,7 +412,8 @@ nav .search-menu-mobile {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.0rem 0rem;
+  width: auto;
+  padding: 0.0rem 1.5rem;
   margin-top: 30px;
 }
 
@@ -420,7 +421,7 @@ nav .search-menu-mobile #search-mobile-item  {
   display: flex;
   justify-content: center;
   align-items: center;
-  width:320px;
+  width:280px;
   padding: 0.9rem 0.4rem;
   background-color: var(--clr-primary-hover);
   outline:none;
@@ -457,14 +458,35 @@ nav .menu-section #nav-menu .search-menu-mobile a i:hover {
 
 }
 
+nav .menu-section #nav-menu a .active {
+  background-color: var(--clr-primary-dark);
+  color: var(--clr-secondary);
+}
+
 
 
 }
 
 
-@media only screen and (max-width:700px){
+@media only screen and (max-width:550px){
 
+  nav .logo-section img {
+    width:60px;
+    height:auto;
+    margin-right:8px;
+  }
 
+  nav .logo-section p {
+    font-size:1rem;
+  }
+
+  nav .logo-section span {
+    font-size:0.8rem;
+  }
+
+  nav .login-section i {
+    padding: 0rem 0.45rem;
+  }
 
 
 
