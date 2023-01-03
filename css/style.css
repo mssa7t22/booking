@@ -475,6 +475,11 @@ nav .menu-section {
 
 @media only screen and (max-width:550px){
 
+nav {
+  padding: 0.4rem 0.5rem;
+}
+
+
   nav .logo-section img {
     width:60px;
     height:auto;
