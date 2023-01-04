@@ -500,6 +500,13 @@ nav .menu-section {
     height: 40px;
   }
 
+  nav .menu-section #nav-menu {
+        position: absolute !important;
+        top:52.5px;
+        left:0;
+
+      }
+
   nav .logo-section img {
     width:60px;
     height:auto;
