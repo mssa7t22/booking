@@ -22,6 +22,7 @@
       <a  href="#"><i id="search-icon" class="fa-solid fa-magnifying-glass"></i></a>
   </div>
   <div class="menu-section">
+
     <ul id="nav-menu">
       <a href="#"><li class="menu-item active">Home</li></a>
       <a href="#"><li class="menu-item">Books</li></a>
@@ -91,6 +92,16 @@
     },
   });
 
+
+  var w = document.documentElement.clientWidth || window.innerWidth;
+  if (w <= 860) {
+  document.getElementById('nav-menu').style.display = 'none'
+  } else {
+  document.getElementById('nav-menu').style.display = 'block'
+  }
+
+
+
   function gfgMenu() {
       const GFG = document.querySelector('#nav-menu');
 
@@ -101,6 +112,9 @@
           GFG.style.display = "none";
       }
   }
+
+
+
 </script>
 
 
