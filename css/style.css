@@ -434,6 +434,7 @@ nav .search-menu-mobile {
   width: auto;
   padding: 0.0rem 1.5rem;
   margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 nav .search-menu-mobile #search-mobile-item  {
@@ -495,7 +496,8 @@ nav .menu-section {
 @media only screen and (max-width:550px){
 
   nav {
-    padding: 0.4rem 0.2rem;
+    padding: 0.4rem 0.4rem;
+    height: 40px;
   }
 
   nav .logo-section img {
