@@ -19,7 +19,7 @@
   </div>
   <div class="search-menu">
       <input id="search" type="search" name="search" placeholder="Find a book...">
-      <a  href="#"><i id="search-icon" class="fa-solid fa-magnifying-glass"></i></a>
+      <a onclick="searchMenu()" href="#"><i id="search-icon" class="fa-solid fa-magnifying-glass"></i></a>
   </div>
   <div class="menu-section">
 
@@ -46,6 +46,14 @@
     </a>
   </div>
 </nav>
+<div>
+  <ul id="drop-search">
+    <li class="search-menu">
+      <input id="search-mobile-item" type="search" name="search" placeholder="Find a book...">
+      <a href="#"><i id="search-icon-mobile" class="fa-solid fa-magnifying-glass"></i></a>
+    </li>
+  </ul>
+</div>
 <!-- Swiper -->
    <div class="swiper mySwiper">
      <div class="swiper-wrapper">
@@ -92,18 +100,34 @@
     },
   });
 
+  document.getElementById('drop-search').style.display = 'none';
 
   var w = document.documentElement.clientWidth || window.innerWidth;
   if (w <= 860) {
   document.getElementById('nav-menu').style.display = 'none'
   } else {
   document.getElementById('nav-menu').style.display = 'block'
-  }
+};
+
+
+
+
 
 
 
   function gfgMenu() {
       const GFG = document.querySelector('#nav-menu');
+
+      if (GFG.style.display === "none") {
+          GFG.style.display = "block";
+      }
+      else {
+          GFG.style.display = "none";
+      }
+  }
+
+  function searchMenu() {
+      const GFG = document.querySelector('#drop-search');
 
       if (GFG.style.display === "none") {
           GFG.style.display = "block";
