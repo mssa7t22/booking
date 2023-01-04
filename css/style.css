@@ -391,7 +391,7 @@ nav .menu-section #nav-menu {
       top:62.5px;
       left:0;
       text-align: center;
-      overflow-y:auto;
+      overflow-y:auto !important;;
       z-index: 1000;
     }
 
@@ -513,11 +513,11 @@ nav .menu-section {
 
   nav .menu-section #nav-menu .menu-item-mobile {
     display: block !important;
-    color: #11AACC;
+    color: #11aacc !important;
   }
 
   nav .menu-section #nav-menu .menu-item-mobile:hover {
-    color: var(--clr-secondary);
+    color: var(--clr-secondary) !important;;
   }
 
     nav .login-section {
