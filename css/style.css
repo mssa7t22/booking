@@ -66,10 +66,8 @@ nav {
   justify-content: space-around;
 }
 
-
-nav .menu-section #nav-menu-mobile {display: none !important;}
-
-nav .menu-section #nav-menu {display: block;}
+nav .menu-section #nav-menu {display: block !important;}
+nav .menu-section #nav-menu-mobile, nav .menu-section #nav-menu-mobile a {display: none;}
 
 nav .logo-section {
   display:flex;
@@ -178,18 +176,19 @@ nav .menu-section {
   margin-left: 5rem;
 }
 
-nav .menu-section #nav-menu {
+nav .menu-section #nav-menu, nav .menu-section #nav-menu-mobile {
   transition: 0.35 ease;
 
 }
 
-nav .menu-section #nav-menu a {
+nav .menu-section #nav-menu a, nav .menu-section #nav-menu-mobile a {
   cursor: pointer;
   color: var(--clr-white);
   font-size: 16px;
 }
 
-nav .menu-section #nav-menu a:hover, nav .menu-section #nav-menu a .active {
+nav .menu-section #nav-menu a:hover, nav .menu-section #nav-menu a .active,
+nav .menu-section #nav-menu-mobile a:hover, nav .menu-section #nav-menu-mobile a .active  {
   cursor: pointer;
   background-color: var(--clr-primary-hover);
   padding: 0.8rem 0rem;
@@ -198,7 +197,7 @@ nav .menu-section #nav-menu a:hover, nav .menu-section #nav-menu a .active {
 }
 
 
-nav .menu-section #nav-menu a .active {
+nav .menu-section #nav-menu a .active, nav .menu-section #nav-menu-mobile a .active{
   padding: 0.8rem 0.8rem;
 }
 
@@ -207,7 +206,7 @@ nav .menu-section #nav-menu .menu-item {
   padding: 0 0.8rem;
 }
 
-nav .menu-section #nav-menu .menu-item-mobile {display: none;}
+nav .menu-section #nav-menu-mobile .menu-item-mobile {display: none;}
 
 nav .login-section {
   display:flex;
@@ -365,13 +364,20 @@ nav .menu-section {
 
 nav .login-section {margin-left: 1rem;}
 
+#drop-search-background {
 
+   background-image: url('../images/drop-background.png');
+   width: 100%;
+   height: 54px;
+   max-width: 1920px;
+}
 #drop-search {
   display: block;
   justify-content: center;
   align-items: center;
-  padding: 0.7rem 0;
-  background-color: var(--clr-dark);
+  padding: 0.5rem 0;
+  background-color: rgba(23, 23, 23, 0.70);
+
 }
 
 #drop-search .search-menu {
@@ -452,8 +458,9 @@ nav .login-section .bars {
 
   }
 
-
-nav .menu-section #nav-menu {
+nav .menu-section #nav-menu {display: none !important;}
+nav .menu-section #nav-menu-mobile {
+      display: block;
       position: absolute !important;
       width: 100%;
       height: 100vh;
@@ -462,27 +469,29 @@ nav .menu-section #nav-menu {
       top:62.5px;
       left:0;
       text-align: center;
-      overflow-y:auto !important;;
       z-index: 1000;
     }
 
-nav .menu-section #nav-menu .menu-item, nav .menu-section #nav-menu .menu-item:first-child  {
+nav .menu-section #nav-menu-mobile a {display: block;}
+nav .menu-section #nav-menu-mobile a:hover {padding: 0;}
+
+nav .menu-section #nav-menu-mobile .menu-item, nav .menu-section #nav-menu-mobile .menu-item:first-child  {
       display: block;
       padding: 1.5rem  0;
       text-align: center;
       border-radius: 0;
     }
 
-nav .menu-section #nav-menu .menu-item:hover {
+nav .menu-section #nav-menu-mobile .menu-item:hover {
       background-color: var(--clr-primary-hover);
     }
 
-nav .menu-section #nav-menu .menu-item-mobile {display: none !important;}
+nav .menu-section #nav-menu-mobile .menu-item-mobile {display: none !important;}
 
 
 nav .search-menu #search-icon {display: none;}
 
-#drop-search .search-menu, #drop-search {display: none !important;}
+#drop-search .search-menu, #drop-search, #drop-search-background {display: none !important;}
 
 nav .search-menu-mobile {
   display: flex;
@@ -524,18 +533,18 @@ nav .search-menu-mobile #search-icon-mobile {
 
 
 
-nav .menu-section #nav-menu .search-menu-mobile a:hover {
+nav .menu-section #nav-menu-mobile .search-menu-mobile a:hover {
   padding: 0rem;
 }
 
-nav .menu-section #nav-menu .search-menu-mobile a i {color: var(--clr-primary-dark);}
+nav .menu-section #nav-menu-mobile .search-menu-mobile a i {color: var(--clr-primary-dark);}
 
-nav .menu-section #nav-menu .search-menu-mobile a i:hover {
+nav .menu-section #nav-menu-mobile .search-menu-mobile a i:hover {
   background-color: var(--clr-white);
 
 }
 
-nav .menu-section #nav-menu a .active {
+nav .menu-section #nav-menu-mobile a .active {
   background-color: var(--clr-primary-dark);
   color: var(--clr-secondary);
 }
@@ -557,7 +566,7 @@ nav .menu-section {
     height: 40px;
   }
 
-  nav .menu-section #nav-menu {
+  nav .menu-section #nav-menu-mobile {
         position: absolute !important;
         top:52.5px;
         left:0;
@@ -598,12 +607,12 @@ nav .menu-section {
 
 @media only screen and (max-width:380px) {
 
-  nav .menu-section #nav-menu .menu-item-mobile {
+  nav .menu-section #nav-menu-mobile .menu-item-mobile {
     display: block !important;
     color: #11aacc !important;
   }
 
-  nav .menu-section #nav-menu .menu-item-mobile:hover {
+  nav .menu-section #nav-menu-mobile .menu-item-mobile:hover {
     color: var(--clr-secondary) !important;;
   }
 

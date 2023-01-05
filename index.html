@@ -28,6 +28,12 @@
       <a href="#"><li class="menu-item">Books</li></a>
       <a href="#"><li class="menu-item">Order a book</li></a>
       <a href="#"><li class="menu-item">Account</li></a>
+    </ul>
+    <ul id="nav-menu-mobile">
+      <a href="#"><li class="menu-item active">Home</li></a>
+      <a href="#"><li class="menu-item">Books</li></a>
+      <a href="#"><li class="menu-item">Order a book</li></a>
+      <a href="#"><li class="menu-item">Account</li></a>
       <a href="#"><li class="menu-item menu-item-mobile">Login</li></a>
       <a href="#"><li class="menu-item menu-item-mobile">Sign up</li></a>
       <li class="search-menu-mobile">
@@ -35,6 +41,7 @@
         <a href="#"><i id="search-icon-mobile" class="fa-solid fa-magnifying-glass"></i></a>
       </li>
     </ul>
+
   </div>
   <div class="login-section">
     <a class="login-small-mobile" href="#"><i class="fa-solid fa-right-to-bracket"></i></a>
@@ -46,8 +53,8 @@
     </a>
   </div>
 </nav>
-<div>
-  <ul id="drop-search">
+<div id="drop-search-background">
+  <ul id="drop-search" >
     <li class="search-menu">
       <input id="search-mobile-item" type="search" name="search" placeholder="Find a book...">
       <a href="#"><i id="search-icon-mobile" class="fa-solid fa-magnifying-glass"></i></a>
@@ -101,23 +108,19 @@
     },
   });
 
-  document.getElementById('drop-search').style.display = 'none';
+  document.getElementById('drop-search-background').style.display = 'none';
 
   var w = document.documentElement.clientWidth || window.innerWidth;
   if (w <= 860) {
-  document.getElementById('nav-menu').style.display = 'none'
+  document.getElementById('nav-menu-mobile').style.display = 'none'
   } else {
-  document.getElementById('nav-menu').style.display = 'block'
+  document.getElementById('nav-menu-mobile').style.display = 'block'
 };
 
 
 
-
-
-
-
   function gfgMenu() {
-      const GFG = document.querySelector('#nav-menu');
+      const GFG = document.querySelector('#nav-menu-mobile');
 
       if (GFG.style.display === "none") {
           GFG.style.display = "block";
@@ -128,7 +131,7 @@
   }
 
   function searchMenu() {
-      const GFG = document.querySelector('#drop-search');
+      const GFG = document.querySelector('#drop-search-background');
 
       if (GFG.style.display === "none") {
           GFG.style.display = "block";
