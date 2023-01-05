@@ -142,12 +142,12 @@ nav .search-menu i, #drop-search .search-menu i  {
   border:0;
   font-weight: bold;
   transition: 0.35s ease;
-  padding: 0.7rem 0.8rem;
-}
+  }
 
 nav .search-menu i  {
   color:#e6e6e6;
   background-color: var(--clr-primary-dark);
+  padding: 0.68rem 0.8rem;
 }
 
 
@@ -156,6 +156,7 @@ nav .search-menu i  {
   background-color: var(--clr-secondary-dark);
   color: var(--clr-white);
   transition: 0.3s ease;
+  padding: 0.7rem 0.8rem;
 }
 
 #drop-search .search-menu {display: none;}
@@ -522,7 +523,7 @@ nav .search-menu-mobile #search-mobile-item::placeholder {color:var(--clr-placeh
 nav .search-menu-mobile #search-icon-mobile {
 
   color:#e6e6e6;
-  padding: 0.92rem 0.85rem;
+  padding: 0.9rem 0.85rem;
   background-color: var(--clr-secondary);
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
