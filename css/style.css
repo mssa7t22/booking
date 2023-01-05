@@ -502,6 +502,7 @@ nav .menu-section {
   margin-left: 0.5rem;
 }
 
+.swiper-button-next:after, .swiper-button-prev:after {margin-top: 3rem;}
 
 }
 
