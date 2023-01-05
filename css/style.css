@@ -412,8 +412,7 @@ nav .menu-section #nav-menu-mobile {
     padding: 0;
     text-align: center;
     z-index: 100;
-    overflow-y: hidden;
-
+    overflow-y: scroll;
     }
 
 
