@@ -372,10 +372,11 @@ nav .login-section {margin-left: 1rem;}
 
   nav {
     background-color: var(--clr-primary) !important;
-    position: fixed !important;
+    position:sticky !important;
     width:100%;
     padding-left: 0;
     z-index: 500 !important;
+
   }
 
 
@@ -400,17 +401,18 @@ nav .login-section .bars {
 
 nav .menu-section #nav-menu {display: none !important;}
 nav .menu-section #nav-menu-mobile {
-    display: flex;
+    display: absolute;
     flex-direction: column;
-      position: fixed !important;
+      position:fixed !important;
       top:62px;
       left:0;
       width: 100%;
-      height: 100vh;
+      height: auto;
       background-color: var(--clr-primary-dark);
       padding: 0;
       text-align: center;
       z-index: 100;
+      overflow-y: scroll;
     }
 
 
@@ -500,7 +502,6 @@ nav .menu-section {
   margin-left: 0.5rem;
 }
 
-.swiper-button-prev::after, .swiper-button-next::after {margin-top: 3rem;}
 
 }
 
