@@ -123,7 +123,7 @@ nav .search-menu input {
 
 #drop-search .search-menu input {
   width:400px;
-  background-color: var(--clr-secondary);
+  background-color: #fed4b7;
   color: var(--clr-placeholder-dark);
 }
 
