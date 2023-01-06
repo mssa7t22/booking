@@ -34,6 +34,7 @@ body {
   font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  background-color: var(--clr-dark);
 
 }
 
@@ -237,7 +238,7 @@ height:1250px;}
   justify-content: space-between;
   align-items:flex-start;
   padding: 2.3rem 1.5rem;
-    background-color: var(--clr-dark);
+  background-color: var(--clr-dark);
 }
 
 

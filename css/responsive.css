@@ -386,7 +386,8 @@ main .new-books-section .new-books-section-items {
               .categories-menu {display: flex;
               justify-content: center;
               margin-top: 2.5rem;
-              margin-bottom: 0.5rem;}
+              margin-bottom: 0.5rem;
+            }
 
               .categories-menu div {
                 height: 35px;
