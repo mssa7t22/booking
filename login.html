@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Books Booking System | Log-in</title>
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link href="fonts/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+
+</head>
+<body>
+  <nav>
+    <div class="logo-section">
+      <img src="images/logo.png" alt="logo image">
+      <a href="index.html"><p>Books<span> Booking System</span></p></a>
+    </div>
+    <div class="search-menu">
+        <input id="search" type="search" name="search" placeholder="Find a book...">
+        <a href="#"><i id="search-icon" class="fa-solid fa-magnifying-glass"></i></a>
+    </div>
+    <div class="menu-section">
+
+      <ul id="nav-menu">
+        <a href="#"><li class="menu-item">Home</li></a>
+        <a href="#"><li class="menu-item">Books</li></a>
+        <a href="#"><li class="menu-item">Order a book</li></a>
+        <a href="#"><li class="menu-item">Account</li></a>
+      </ul>
+      <ul id="nav-menu-mobile">
+        <a href="#"><li class="menu-item">Home</li></a>
+        <a href="#"><li class="menu-item">Books</li></a>
+        <a href="#"><li class="menu-item">Order a book</li></a>
+        <a href="#"><li class="menu-item">Account</li></a>
+        <a href="login.html"><li class="menu-item menu-item-mobile active">Login</li></a>
+        <a href="#"><li class="menu-item menu-item-mobile">Sign up</li></a>
+        <li class="search-menu-mobile">
+          <input id="search-mobile-item" type="search" name="search" placeholder="Find a book...">
+          <a href="#"><i id="search-icon-mobile" class="fa-solid fa-magnifying-glass"></i></a>
+        </li>
+      </ul>
+
+    </div>
+    <div class="login-section">
+      <a class="login-small-mobile" href="#"><i class="fa-solid fa-user-plus"></i></a>
+      <span>︱</span>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a class="bars" onclick="gfgMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </nav>
+  <div class="container-box">
+    <div class="container-login">
+      <div <div class="box">
+        <h1>Login Control Panel</h1>
+        <div class="input-box">
+          <i class="fas fa-envelope"></i><input type="email" placeholder="Email ID" class="email">
+        </div>
+        <div class="input-box ">
+          <i class="fas fa-key"></i><input type="password" placeholder="Password" class="password">
+        </div>
+        <a class="Login-btn" href="#">Log In</a>
+      </div>
+    </div>
+  </div>
+
+
+<footer>
+  <div class="footer-copyright">
+    <p>Copyright © Books Booking System - <a href="#">Moustafa AL-Tawaijary</a></p>
+  </div>
+</footer>
+
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
+  },
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+  document.getElementById('drop-search-background').style.display = 'none';
+
+  var w = document.documentElement.clientWidth || window.innerWidth;
+  if (w <= 860) {
+  document.getElementById('nav-menu-mobile').style.display = 'none'
+  } else {
+  document.getElementById('nav-menu-mobile').style.display = 'block'
+};
+
+
+
+  function gfgMenu() {
+      const GFG = document.querySelector('#nav-menu-mobile');
+
+      if (GFG.style.display === "none") {
+          GFG.style.display = "block";
+      }
+      else {
+          GFG.style.display = "none";
+      }
+  }
+
+
+</script>
+
+
+</body>
+</html>
