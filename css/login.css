@@ -207,11 +207,6 @@ body {
 
 @media only screen and (max-width:500px) {
 
-  #backround-box {
-    height:90vh;
-  }
-
-
   .container-login {
     width: 380px;
     height: 260px;}
