@@ -223,6 +223,13 @@ bottom: 0;}
 
 @media only screen and (max-width:500px) {
 
+  #backround-box {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+
+
   .container-login {
     width: 380px;
     height: 260px;}
@@ -230,6 +237,8 @@ bottom: 0;}
 
 
 @media only screen and (max-width:415px) {
+
+  .container-box {padding: 0.6rem;}
 
   .container-login {
     width: 340px;
@@ -247,6 +256,10 @@ bottom: 0;}
   .container-login {
     width: 320px;
     top:48%;
+}
+
+.box {
+  width: 270px;
 }
 
     .login-btns {
@@ -274,6 +287,10 @@ bottom: 0;}
     width: 290px;
     height: 285px;}
 
+    .box {
+      width: 240px;
+    }
+
     .input-box input {
      width: 180px;
    }
@@ -295,4 +312,18 @@ bottom: 0;}
 
   .container-login {
     width: 245px;}
+
+    .box {
+      width: 190px;
+    }
+}
+
+@media only screen and (max-width:275px) {
+
+  .container-login {
+    width: 220px;}
+
+    .box {
+      width: 160px;
+    }
 }
